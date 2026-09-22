@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rock Paper Scissors</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <body>
+
+        <!-- Start Screen -->
+
+        <div id="start-screen" class="start-screen">
+
+            <div class="start-card">
+
+                <div class="start-icons">
+                    ✊ ✋ ✌️
+                </div>
+
+                <h1>Rock Paper Scissors</h1>
+
+                <p>Hey! What's your name? 👀</p>
+
+                <input type="text" id="player-name" placeholder="Enter your name" maxlength="15" autocomplete="off">
+
+                <button id="start-game">
+                    LET'S PLAY 🎮
+                </button>
+
+                <div id="name-error">
+                    Please enter your name! 😭
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Game -->
+
+        <div class="game-container">
+
+            <h1>Rock Paper Scissors</h1>
+
+            <div class="players">
+
+                <span id="player-name-display">
+                    Player
+                </span>
+
+                <span class="vs">
+                    v/s
+                </span>
+
+                <span>
+                    Computer
+                </span>
+
+            </div>
+
+            <div class="hands">
+
+                <div class="hand-box">
+
+                    <div id="player-hand" class="hand">
+                        ✊
+                    </div>
+
+                </div>
+
+                <div class="hand-box">
+
+                    <div id="computer-hand" class="hand">
+                        ✊
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div id="result" class="result">
+                Choose your move!
+            </div>
+
+            <div class="choices">
+
+                <button class="choice" data-choice="rock">
+                    ✊
+                    <span>Rock</span>
+                </button>
+
+                <button class="choice" data-choice="paper">
+                    ✋
+                    <span>Paper</span>
+                </button>
+
+                <button class="choice" data-choice="scissors">
+                    ✌️
+                    <span>Scissors</span>
+                </button>
+
+            </div>
+
+            <button id="play-again" class="play-again">
+                ↻ Play Again
+            </button>
+
+            <div class="score">
+
+                <div>
+                    <span>Won:</span>
+                    <strong id="wins">0</strong>
+                </div>
+
+                <div class="line"></div>
+
+                <div>
+                    <span>Lost:</span>
+                    <strong id="losses">0</strong>
+                </div>
+
+                <div class="line"></div>
+
+                <div>
+                    <span>Draw:</span>
+                    <strong id="draws">0</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <script src="script.js"></script>
+
+    </body>
+
+</body>
+
+</html>
